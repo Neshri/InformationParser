@@ -2,7 +2,6 @@ import ollama
 import numpy as np
 
 def get_embeddings(text):
-    # Use the model to generate embeddings
     return ollama.embed(model='nomic-embed-text', input=text).embeddings[0]
 
 
